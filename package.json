@@ -1,0 +1,29 @@
+{
+  "name": "survey-app",
+  "version": "1.0.0",
+  "description": "A single page (two stage) angular survey app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BenGrant123/survey-app.git"
+  },
+  "keywords": [
+    "angular",
+    "survey",
+    "app"
+  ],
+  "author": "Ben Grant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenGrant123/survey-app/issues"
+  },
+  "homepage": "https://github.com/BenGrant123/Repository1#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {}
+}
