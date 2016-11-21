@@ -5,9 +5,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 app.post('/survey-app/submit-survey', function (req, res) {
-	var userData = req.body
+	var userData = req.body;
 	Object.keys(userData).forEach(function(key){
-		console.log(key + ": " + userData[key])
+		console.log(key + ": " + userData[key]);
 	});
  	res.header('Access-Control-Allow-Origin', '*');
 	res.header('Access-Control-Allow-Methods', 'POST');
