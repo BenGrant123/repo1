@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true})); 
 app.use(bodyParser.json());
 
-app.post('/submit-survey', function (req, res) {
+app.post('/survey-app/submit-survey', function (req, res) {
 	var userData = req.body
 	Object.keys(userData).forEach(function(key){
 		console.log(key + ": " + userData[key])
@@ -15,7 +15,7 @@ app.post('/submit-survey', function (req, res) {
 	res.send("success");
 });
 
-app.use('/', express.static(__dirname + '/app'));
+app.use('/survey-app', express.static(__dirname + '/app'));
 
 var server = app.listen(process.env.PORT || 3000);
 
