@@ -6,7 +6,10 @@
   "scripts": {
     "test": "test"
   },
-  "keywords": [
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BenGrant123/survey-app.git"
+  }, "keywords": [
     "angular",
     "survey",
     "app"
