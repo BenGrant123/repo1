@@ -1,0 +1,7 @@
+Example app listening at http://undefined:undefined
+userTitle: Mr
+userName: t
+userBirthDate: 2016-11-01T00:00:00.000Z
+currentLocation: t
+currentDateTime: 2016-11-01T00:00:00.000Z
+userFeedback: t

@@ -1,0 +1,9 @@
+Example app listening at http://undefined:undefined
+userData is [object Object]
+userData is [object Object]
+userData is [object Object]
+userData is [object Object]
+userData is [object Object]
+userData is [object Object]
+userData is [object Object]
+userData is [object Object]

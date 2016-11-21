@@ -1,0 +1,8 @@
+Example app listening at http://undefined:undefined
+userData is [object Object]
+userTitle: undefined
+userName: undefined
+userBirthDate: undefined
+currentLocation: undefined
+currentDateTime: undefined
+userFeedback: undefined
