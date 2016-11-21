@@ -9,16 +9,19 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-      },
-      build: {
-        src: 'index.js',
-        dest: 'build/<%= pkg.name %>.min.js'
-      }
+          options: {
+            banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+          },
+          build: {
+                  files: grunt.file.expandMapping(['index.js','app/app.js'], '/', {
+                        rename: function(destBase, destPath) {
+                              return destBase+destPath.replace('.js', '.min.js');
+                        }
+                  })
+          }
     },
     jshint: {
-            all: ['*.js']
+            all: ['index.js','app/app.js']
     }
   });
 
